@@ -21,7 +21,6 @@ desi3{jarak > 4}
 g@{shape: proc, label: "awal + (jarak - 4) * perKm"}
 h[ awal ]
 i[/total/]
-desi4{pesan y/n}
 j[/awal = 20.000/]
 k[/perKm = 4000/]
 desi5{jarak > 4}
@@ -33,7 +32,7 @@ A--->a--->desi1--1-->b---desi2
 desi1--2-->c--->a
 desi1--3-->d--->Z
 desi2--motor-->e--->f--->desi3--true-->g--->i
-desi3--false-->h--->i--->desi4--ya-->a
+desi3--false-->h--->i--->a
 desi2--mobil-->j--->k--->desi5--true-->l--->i
 desi5--false-->m--->i
 
