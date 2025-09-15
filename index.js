@@ -6,7 +6,7 @@ async function menuUtama() {
   console.clear()
   let running = true;
   while (running) {
-    console.log("\n=== Hallo.. Mau kemana hari ini?===\n");
+    console.log("=== Hallo.. Mau kemana hari ini?===\n");
     console.log("1. Mulai Perjalanan");
     console.log("2. History Perjalanan");
     console.log("3. Keluar");
