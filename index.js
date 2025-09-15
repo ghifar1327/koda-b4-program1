@@ -1,31 +1,33 @@
-const{question,exit}= require('./lib/input')
+const { question } = require("./lib/input");
+const { tujuan } = require("./lib/pilihTujuan");
+const { lihatHistory } = require("./lib/history");
+
 async function menuUtama() {
   let running = true;
 
   while (running) {
     console.log("\n=== Hallo.. Mau kemana hari ini?===\n");
-    console.log("1. pilih Tujuan");
-    console.log("2. History perjalan");
-    console.log("3. keluar");
+    console.log("1. Pilih Tujuan");
+    console.log("2. History Perjalanan");
+    console.log("3. Keluar");
 
-    const inputMenu = parseInt(await question("\nMasukan angka untuk memilih menu: "));
+    const inputMenu = parseInt(await question("\nMasukan pilihan: "));
 
     switch (inputMenu) {
       case 1:
-        console.log("fitur pilihan belum di buat")
-      break;
+        await tujuan();
+        break;
       case 2:
-        console.log('fitur history pertjalanan')
+        await lihatHistory();
         break;
       case 3:
-        running = false
-        exit()
+        console.log("Terima kasih sudah menggunakan layanan kami 👋");
+        running = false;
         break;
       default:
-        console.log("Input tidak valid!");
-        console.clear()
+        console.log("Pilihan tidak valid!");
     }
   }
 }
 
-menuUtama()
+menuUtama();
