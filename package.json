@@ -1,0 +1,25 @@
+{
+  "name": "program1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghifar1327/koda-b4-program1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghifar1327/koda-b4-program1/issues"
+  },
+  "homepage": "https://github.com/ghifar1327/koda-b4-program1#readme",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
+  }
+}
